@@ -9,12 +9,12 @@ namespace UITest.Forms.Sample.Specflow
 {
     [TestFixture(Platform.Android)]
     [TestFixture(Platform.iOS)]
-    public class Tests
+    public class Test
     {
-        IApp app;
-        Platform platform;
+        protected IApp app;
+        protected Platform platform;
 
-        public Tests(Platform platform)
+        public Test(Platform platform)
         {
             this.platform = platform;
         }
@@ -25,10 +25,10 @@ namespace UITest.Forms.Sample.Specflow
             app = AppInitializer.StartApp(platform);
         }
 
-        [Test]
-        public void AppLaunches()
-        {
-            app.Screenshot("First screen.");
-        }
+        //[Test]
+        //public void AppLaunches()
+        //{
+        //    app.Screenshot("First screen.");
+        //}
     }
 }
