@@ -35,6 +35,13 @@ namespace UITest.Forms.Sample.UITests
         }
 
         [Test]
+        public void SelectItem()
+        {
+            app.Tap(x => x.Text("First item"));
+            app.Back();
+        }
+
+        [Test]
         public void Repl()
         {
             app.Repl();
