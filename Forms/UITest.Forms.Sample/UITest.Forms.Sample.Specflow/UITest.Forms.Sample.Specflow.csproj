@@ -59,7 +59,6 @@
     <Compile Include="Feature\AddItemFeature.feature.cs">
       <DependentUpon>AddItemFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="Steps\AddItemStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
